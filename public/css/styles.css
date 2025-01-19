@@ -1,0 +1,235 @@
+*{
+    font-family: 'Roboto';
+}
+
+body{
+    background-image: url("../img/bgluta.jpg");
+    background-size: cover; /* Garante que a imagem cubra toda a tela */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center; 
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+
+.dashboard-events-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for the container */
+    padding: 40px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.table {
+    width: 100%; /* Ensure the table takes full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.table thead th {
+    background-color: #e0e0e0; /* Light gray background for table header */
+    color: #333; /* Darker text for contrast */
+    padding: 10px; /* Padding for table headers */
+    text-align: center;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.table tbody tr:hover {
+    background-color: #f5f5f5; /* Light gray background on row hover */
+}
+
+.table tbody td {
+    padding: 10px; /* Padding for table cells */
+    border-bottom: 1px solid #ddd; /* Light gray bottom border */
+    text-align: center;
+}
+
+.table tbody a {
+    color: #f24640; /* Custom color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.table tbody a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.edit-btn, .delete-btn {
+    margin: 0 5px; /* Space between buttons */
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0); /* Torna o header transparente */
+    height: 10vh;
+}
+.row{
+  margin: 0;  
+}
+
+.container-fluid{
+    padding: 0;
+}
+.btn-primary{
+    background-color: #f24640;
+    border: 2px solid #c22d08;
+    width: 100%; /* Largura total do botão */
+    padding: 10px; /* Altura do botão */
+    font-size: 18px; /* Aumentar a fonte do botão */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Suavização da transição */
+}
+
+.btn-primary:hover{
+    background-color: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);
+}
+
+.nav-link{
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: rgb(238, 8, 8);
+    text-decoration: none;
+    margin-right: 15px;
+    transition: border 0.3s ease, background-color 0.3s ease; /* Suaviza a transição da borda */
+
+}
+.nav-link:hover {
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 10px;
+    border-color: darkred; /* Muda a cor da borda ao passar o mouse */
+}
+#navbar img{
+    width: 60px;
+    margin: 10px;
+    padding: 1px;
+}
+
+#navbar{
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#navbar a{
+    font-size: 18px;
+    color: #ff1b1b;
+}
+
+#navbar a:hover{
+    font-size: 25px;
+    color: #0c0707;
+}
+
+
+
+#search-container{
+    background-image: url("../img/acarau.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1{
+    color: orange;
+    margin-bottom: 30px;
+    font-weight: 900;
+
+}
+
+#search-container form{
+    width: 50%;   
+    margin: 0 auto;
+
+}
+
+#events-container h2{
+    padding: 10px;
+}
+#events-container .subtitle{
+color: #757575;
+}
+
+#cards-container{
+    display: flex;
+}
+
+#events-container .card{
+    flex:1 1 0;
+    max-width: 25%;
+    padding: 0;
+    margin: 5px;
+}
+#events-container img{
+    max-height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-date{
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
+.card-participants{
+    font-size: 14px;
+    color: #757575;
+}
+
+#event-create-container {
+    padding: 30px;
+    margin-top: 50px; /* Espaço superior para o formulário */
+}
+.form-wrapper {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo transparente */
+    padding: 20px; /* Espaço interno do formulário */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.form-wrapper h1 {
+    text-align: center;
+    color: #f24640; /* Cor do título */
+    font-weight: bold;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+
+.form-group {
+    margin-bottom: 20px; /* Espaçamento entre os campos do formulário */
+}
+
+.form-control {
+    border-radius: 10px; /* Bordas arredondadas nos campos de input */
+    padding: 10px; /* Espaço interno dos inputs */
+    border: 1px solid #ccc;
+}
+
+textarea.form-control {
+    height: 100px; /* Altura fixa para o textarea */
+}
+
+#event-create-container label{
+    font-weight: bold;
+}
+
+#event-create-container input,
+#event-create-container select,
+#event-create-container input textarea{
+    font-size: 10px;
+}
+footer{
+    text-align: center;
+    background-color: #302d2d;
+    color: #FFF;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
